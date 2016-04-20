@@ -25,12 +25,10 @@ So through this code you can do something as follows.
 Shortest paths from Milano:
 ![Dijkstra 1](https://github.com/dnlcrl/PyGraphArt/blob/master/doc/dijkstra.png)
 
-## [Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 
 Shortest paths from Roma:
 ![Dijkstra 2](https://github.com/dnlcrl/PyGraphArt/blob/master/doc/dijkstra2.png)
 
-## [Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 
 Shortest paths from Napoli:
 ![Dijkstra 3](https://github.com/dnlcrl/PyGraphArt/blob/master/doc/dijkstra3.png)
