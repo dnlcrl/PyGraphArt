@@ -4,11 +4,11 @@ I wrote this code some time ago with the purpose of learning graph algorithms wh
 
 So through this code you can do something as follows.
 
-## [Breadth-first_search](https://en.wikipedia.org/wiki/Breadth-first_search)
+## [Breadth-First Traversal](https://en.wikipedia.org/wiki/Breadth-first_search)
 
 ![BFS](https://github.com/dnlcrl/PyGraphArt/blob/master/doc/bfs.gif)
 
-## [Depth-first_search](https://en.wikipedia.org/wiki/Depth-first_search)
+## [Depth-First Traversal](https://en.wikipedia.org/wiki/Depth-first_search)
 
 ![DFS](https://github.com/dnlcrl/PyGraphArt/blob/master/doc/dfs.gif)
 
