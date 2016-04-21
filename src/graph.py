@@ -351,7 +351,7 @@ class Graph():
 
     def delta_plus(self, nodes):
         '''
-        Return the list of edges forwarding from a set of nodes
+        Returns the list of edges forwarding from a set of nodes
         '''
         bool_indices_head = np.array([x[0] in nodes for x in self.edges])
         bool_indices_tail = np.array([x[1] not in nodes for x in self.edges])
@@ -361,7 +361,7 @@ class Graph():
 
     def delta_minus(self, nodes):
         '''
-        Return the list of edges backwarding from a set of nodes
+        Returns the list of edges backwarding from a set of nodes
         '''
         bool_indices_head = np.array([x[0] not in nodes for x in self.edges])
         bool_indices_tail = np.array([x[1] in nodes for x in self.edges])
@@ -371,13 +371,13 @@ class Graph():
 
     def coords_edge(self, edge):
         '''
-        Return coordinates head and tail points for an edge
+        Returns coordinates head and tail points for an edge
         '''
         return (self.nodes[edge[0]], self.nodes[edge[1]])
 
     def coords_edges(self, edges):
         '''
-        Return a list of coordinates head and tail points for all edge in edges
+        Returns a list of coordinates head and tail points for all edge in edges
         '''
         res = np.empty((len(edges)), dtype=object)
         for r, e in zip(range(len(edges)), edges):
@@ -395,7 +395,7 @@ class Graph():
 
     def BFS(self, start, fs=None):
         '''
-        Return the BFS tree for the graph starting from start
+        Returns the BFS tree for the graph starting from start
         '''
         to_be_processed = np.array([start], dtype=np.int)
         known = np.array([], dtype=np.int)
@@ -419,7 +419,7 @@ class Graph():
 
     def BFS_path(self, start, end, fs=None):
         '''
-        Return the BFS part for the graph from start to end if one
+        Returns the BFS part for the graph from start to end if one
         '''
         to_be_processed = np.array([start], dtype=np.int)
         known = np.array([], dtype=np.int)
@@ -454,7 +454,7 @@ class Graph():
 
     def DFS(self, start, fs=None):
         '''
-        Return the DFS tree for the graph starting from start
+        Returns the DFS tree for the graph starting from start
         '''
         to_be_processed = np.array([start], dtype=np.int)
         known = np.array([], dtype=np.int)
@@ -478,7 +478,7 @@ class Graph():
 
     def prim(self):
         '''
-        Return Prim's minimum spanninng tree
+        Returns Prim's minimum spanninng tree
         '''
         big_f = set([])
         costs = np.empty((self.n), dtype=object)
@@ -503,7 +503,7 @@ class Graph():
 
     def kruskal(self, maximum=False):
         '''
-        Return Prim's minimum spanninng tree
+        Returns Prim's minimum spanninng tree
         '''
         sets = set([frozenset([x]) for x in range(self.n)])
         tree_edges = np.array([], dtype=object)
@@ -530,7 +530,7 @@ class Graph():
 
     def connect_graphs(self, sets_orig, edges_orig):
         '''
-        Return the edges needed to connect unconnected graphs (sets of nodes)
+        Returns the edges needed to connect unconnected graphs (sets of nodes)
         given a set of sets of nodes, select the master_graph (the biggest) one
         and search the shortest edges to connect the other sets of nodes
         '''
